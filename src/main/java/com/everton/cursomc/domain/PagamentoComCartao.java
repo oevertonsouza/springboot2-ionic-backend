@@ -1,7 +1,10 @@
 package com.everton.cursomc.domain;
 
+import javax.persistence.Entity;
+
 import com.everton.cursomc.domain.enums.EstadoPagamento;
 
+@Entity
 public class PagamentoComCartao extends Pagamento {
 	private static final long serialVersionUID = 1L;
 
