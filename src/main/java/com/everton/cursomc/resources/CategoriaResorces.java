@@ -60,7 +60,7 @@ public class CategoriaResorces {
 		List<CategoriaDTO> listDto = list.stream().map(obj -> new CategoriaDTO(obj)).collect(Collectors.toList());
 		return ResponseEntity.ok().body(listDto);
 	}
-	
+	 
 	@RequestMapping(value="/page", method=RequestMethod.GET)
 	public ResponseEntity<Page<CategoriaDTO>> findPage(
 			@RequestParam(value="page", defaultValue="0") Integer page, 
